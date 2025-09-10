@@ -142,3 +142,9 @@ body {
   width: 6rem;
   height: 3rem;
 }
+
+@media (width<23.4375em) {
+  html {
+    font-size: 50%;
+  }
+}
