@@ -39,8 +39,26 @@ addTaskButton.addEventListener("click", function (e) {
       "afterbegin",
       ` <button class="task-btn undone">Undone</button>`
     );
+
+    const btnUndone = btnDone.parentElement.querySelector(".undone");
+    console.log(btnUndone);
+
+    btnUndone.addEventListener("click", function (e) {
+      btnUndone.closest(".tasks").classList.remove("tasks-cancel");
+      btnUndone.remove();
+    });
   });
 
+  // Undone functionality
+  // const btnUndone = document.querySelector(".undone");
+  // btnUndone.addEventListener("click", function (e) {
+  //   btnUndone.parentElement.innerHTML = " ";
+  //   btnUndone.parentElement.insertAdjacentElement(
+  //     "afterbegin",
+  //     ` <button class="task-btn done">Done</button>
+  //         <button class="task-btn remove">Remove</button>`
+  //   );
+  // });
   // Remove functionality
   const btnRemove = document.querySelector(".remove");
 
@@ -52,3 +70,12 @@ addTaskButton.addEventListener("click", function (e) {
     tasksContainer.style.overflowY = "scroll";
   }
 });
+
+// btnUndone.addEventListener("click", function (e) {
+//   btnUndone.parentElement.innerHTML = " ";
+//   btnUndone.parentElement.insertAdjacentHTML(
+//     "afterbegin",
+//     ` <button class="task-btn done">Done</button>
+//           <button class="task-btn remove">Remove</button>`
+//   );
+// });
