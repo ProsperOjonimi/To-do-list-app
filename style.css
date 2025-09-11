@@ -71,6 +71,7 @@ body {
   border: none;
   border-radius: 9px;
   padding: 0.5rem;
+  cursor: pointer;
 }
 .tasks-container {
   width: 41.3rem;
@@ -103,11 +104,13 @@ body {
   width: 4.6rem;
   height: 3rem;
   background: var(--done);
+  cursor: pointer;
 }
 .remove {
   width: 6.1rem;
   height: 3rem;
   background: var(--remove);
+  cursor: pointer;
 }
 .btn-container {
   display: flex;
@@ -141,6 +144,7 @@ body {
   background: var(--undone);
   width: 6rem;
   height: 3rem;
+  cursor: pointer;
 }
 
 @media (width<23.4375em) {
