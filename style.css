@@ -146,6 +146,9 @@ body {
   height: 3rem;
   cursor: pointer;
 }
+.hidden {
+  display: none;
+}
 
 @media (width<23.4375em) {
   html {
